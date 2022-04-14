@@ -1,8 +1,23 @@
 {
   "name": "ele-themes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "files": [
-    "themes"
-  ]
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "gulp run"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-css-wrap": "^0.1.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-nop": "^0.0.3",
+    "gulp-sass": "^5.1.0",
+    "ora": "0.3.0",
+    "sass": "^1.50.0"
+  }
 }
