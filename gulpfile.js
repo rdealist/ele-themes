@@ -5,6 +5,7 @@ const task = require("./lib/task");
 const compiler = (namespaced) => {
   task.build(namespaced);
   task.fonts(namespaced);
+  task.cssWrap(namespaced);
 };
 
 gulp.task("run", async () => {
