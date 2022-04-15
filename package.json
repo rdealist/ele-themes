@@ -8,7 +8,7 @@
     "themes"
   ],
   "scripts": {
-    "build": "gulp run"
+    "build": "gulp run && gulp css-wrap"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -19,8 +19,7 @@
     "gulp-nop": "^0.0.3",
     "gulp-sass": "^5.1.0",
     "node-sass": "^7.0.1",
-    "ora": "0.3.0",
-    "sass": "^1.50.0"
+    "ora": "0.3.0"
   },
   "browserslist": [
     "defaults",

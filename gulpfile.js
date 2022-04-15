@@ -5,7 +5,6 @@ const task = require("./lib/task");
 const compiler = (namespaced) => {
   task.build(namespaced);
   task.fonts(namespaced);
-  task.cssWrap(namespaced);
 };
 
 gulp.task("run", async () => {
@@ -15,6 +14,17 @@ gulp.task("run", async () => {
     }
     files.forEach((file) => {
       compiler(file);
+    });
+  });
+});
+
+gulp.task("css-wrap", async () => {
+  await fs.readdir("dist", (err, files) => {
+    if (err) {
+      console.error(err);
+    }
+    files.forEach((file) => {
+      task.cssWrap(file);
     });
   });
 });
