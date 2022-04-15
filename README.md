@@ -17,10 +17,16 @@
 
 ### 开发方法
 
-1. 本地链接到使用element-ui组件库的项目，使用npm link或者yalc。（推荐yalc，后续步骤以yalc为例。）
+1. 本地链接到使用 element-ui 组件库的项目，使用 npm link 或者 yalc。（推荐 yalc，后续步骤以 yalc 为例。）
 2. 命令行输入 pnpm install yalc -g。
 3. 到本项目根目录下，使用 yalc publish 发布。
-4. 在应用element-ui组件库的项目根目录下，使用yalc add ele-themes建立连接。
-5. 使用ele-themes中的文件替换element-ui的样式引入。
-6. 引入scss源码进行开发调试时，需要给该项目添加sass-loader。
+4. 在应用 element-ui 组件库的项目根目录下，使用 yalc add ele-themes 建立连接。
+5. 使用 ele-themes 中的文件替换 element-ui 的样式引入。
+6. 引入 scss 源码进行开发调试时，需要给该项目添加 sass-loader。
+7. 在本项目中修改了代码后，使用 yalc push 即可将更新推送到开发项目中。
 
+### 字体图标
+
+1. 若有需要引入的字体图标，将字体文件放在 src/fonts 文件夹内即可。
+2. 注意字体图标的命名不要冲突。
+3. 打包后，按照 element-ui 的图标引用方式即可引用。
