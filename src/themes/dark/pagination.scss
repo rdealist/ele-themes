@@ -194,10 +194,11 @@
     .btn-next,
     .el-pager li {
       margin: 0 5px;
-      background-color: $--color-info-lighter;
+      background-color: $--color-white;
       color: $--color-text-regular;
-      min-width: 30px;
+      min-width: 24px;
       border-radius: 2px;
+      font-weight: normal;
 
       &.disabled {
         color: $--color-text-placeholder;

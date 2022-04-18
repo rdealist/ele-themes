@@ -16,58 +16,59 @@ $--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
 /* Color
 -------------------------- */
 /// color|1|Brand Color|0
-$--color-primary: #40ffe9 !default;
+$--color-primary: #296BFF !default;
 /// color|1|Background Color|4
-$--color-white: #000000 !default;
+$--color-white: #292F46 !default;
 /// color|1|Background Color|4
 $--color-black: #ffffff !default;
-$--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
-$--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
-$--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
-$--color-primary-light-4: mix($--color-white, $--color-primary, 40%) !default; /* 8cc5ff */
-$--color-primary-light-5: mix($--color-white, $--color-primary, 50%) !default; /* a0cfff */
-$--color-primary-light-6: mix($--color-white, $--color-primary, 60%) !default; /* b3d8ff */
-$--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /* c6e2ff */
-$--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
-$--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
+$--color-primary-light-1: mix(#FFFFFF, $--color-primary, 10%) !default; /* 53a8ff */
+$--color-primary-light-2: mix(#FFFFFF, $--color-primary, 20%) !default; /* 66b1ff */
+$--color-primary-light-3: mix(#FFFFFF, $--color-primary, 30%) !default; /* 79bbff */
+$--color-primary-light-4: mix(#FFFFFF, $--color-primary, 40%) !default; /* 8cc5ff */
+$--color-primary-light-5: mix(#FFFFFF, $--color-primary, 50%) !default; /* a0cfff */
+$--color-primary-light-6: mix(#FFFFFF, $--color-primary, 60%) !default; /* b3d8ff */
+$--color-primary-light-7: mix(#FFFFFF, $--color-primary, 70%) !default; /* c6e2ff */
+$--color-primary-light-8: mix(#FFFFFF, $--color-primary, 80%) !default; /* d9ecff */
+$--color-primary-light-9: mix(#FFFFFF, $--color-primary, 90%) !default; /* ecf5ff */
 /// color|1|Functional Color|1
-$--color-success: #67C23A !default;
+$--color-success: #2CAB6A !default;
 /// color|1|Functional Color|1
-$--color-warning: #E6A23C !default;
+$--color-warning: #F78E24 !default;
 /// color|1|Functional Color|1
-$--color-danger: #F56C6C !default;
+$--color-danger: #DB383D !default;
 /// color|1|Functional Color|1
-$--color-info: #909399 !default;
+$--color-info: #FFFFFF !default;
 
-$--color-success-light: mix($--color-white, $--color-success, 80%) !default;
-$--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
-$--color-danger-light: mix($--color-white, $--color-danger, 80%) !default;
-$--color-info-light: mix($--color-white, $--color-info, 80%) !default;
+$--color-success-light: mix(#FFFFFF, $--color-success, 80%) !default;
+$--color-warning-light: mix(#FFFFFF, $--color-warning, 80%) !default;
+$--color-danger-light: mix(#FFFFFF, $--color-danger, 80%) !default;
+$--color-info-light: mix(#FFFFFF, $--color-info, 80%) !default;
 
-$--color-success-lighter: mix($--color-white, $--color-success, 90%) !default;
-$--color-warning-lighter: mix($--color-white, $--color-warning, 90%) !default;
-$--color-danger-lighter: mix($--color-white, $--color-danger, 90%) !default;
-$--color-info-lighter: mix($--color-white, $--color-info, 90%) !default;
+$--color-success-lighter: mix(#FFFFFF, $--color-success, 90%) !default;
+$--color-warning-lighter: mix(#FFFFFF, $--color-warning, 90%) !default;
+$--color-danger-lighter: mix(#FFFFFF, $--color-danger, 90%) !default;
+$--color-info-lighter: mix(#FFFFFF, $--color-info, 90%) !default;
 /// color|1|Font Color|2
-$--color-text-primary: #303133 !default;
+$--color-text-primary: #FFFFFF !default;
 /// color|1|Font Color|2
-$--color-text-regular: #606266 !default;
+$--color-text-regular: #FFFFFF !default;
 /// color|1|Font Color|2
-$--color-text-secondary: #909399 !default;
+$--color-text-secondary: #ffffff !default;
 /// color|1|Font Color|2
-$--color-text-placeholder: #C0C4CC !default;
+$--color-text-placeholder: #5A6584 !default;
 /// color|1|Border Color|3
-$--border-color-base: #DCDFE6 !default;
+$--border-color-base: rgba(255,255,255,0.6) !default;
 /// color|1|Border Color|3
-$--border-color-light: #E4E7ED !default;
+$--border-color-light: rgba(228, 231, 237, 0.5) !default;
 /// color|1|Border Color|3
-$--border-color-lighter: #EBEEF5 !default;
+$--border-color-lighter: rgba(235, 238, 245, 0.4) !default;
 /// color|1|Border Color|3
-$--border-color-extra-light: #F2F6FC !default;
+$--border-color-extra-light: rgba(242, 246, 252, 0.3) !default;
 
 // Background
 /// color|1|Background Color|4
 $--background-color-base: #F5F7FA !default;
+$--background-hover-color-base: rgba(245, 247, 250, 0.125) !default;
 
 /* Link
 -------------------------- */
@@ -81,9 +82,9 @@ $--border-style-base: solid !default;
 $--border-color-hover: $--color-text-placeholder !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
 /// borderRadius|1|Radius|0
-$--border-radius-base: 4px !default;
+$--border-radius-base: 2px !default;
 /// borderRadius|1|Radius|0
-$--border-radius-small: 2px !default;
+$--border-radius-small: 1px !default;
 /// borderRadius|1|Radius|0
 $--border-radius-circle: 100% !default;
 /// borderRadius|1|Radius|0
@@ -91,11 +92,11 @@ $--border-radius-zero: 0 !default;
 
 // Box-shadow
 /// boxShadow|1|Shadow|1
-$--box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) !default;
+$--box-shadow-base: 0 1px 2px rgba(0, 0, 0, .12), 0 0 3px rgba(0, 0, 0, .04) !default;
 // boxShadow|1|Shadow|1
-$--box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12) !default;
+$--box-shadow-dark: 0 1px 2px rgba(0, 0, 0, .12), 0 0 3px rgba(0, 0, 0, .12) !default;
 /// boxShadow|1|Shadow|1
-$--box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
+$--box-shadow-light: 0 1px 6px 0 rgba(0, 0, 0, 0.1) !default;
 
 /* Fill
 -------------------------- */
@@ -106,29 +107,29 @@ $--fill-base: $--color-white !default;
 $--font-path: '../../fonts' !default;
 $--font-display: 'auto' !default;
 /// fontSize|1|Font Size|0
-$--font-size-extra-large: 20px !default;
+$--font-size-extra-large: 18px !default;
 /// fontSize|1|Font Size|0
-$--font-size-large: 18px !default;
+$--font-size-large: 16px !default;
 /// fontSize|1|Font Size|0
-$--font-size-medium: 16px !default;
+$--font-size-medium: 14px !default;
 /// fontSize|1|Font Size|0
-$--font-size-base: 14px !default;
+$--font-size-base: 12px !default;
 /// fontSize|1|Font Size|0
-$--font-size-small: 13px !default;
+$--font-size-small: 11px !default;
 /// fontSize|1|Font Size|0
-$--font-size-extra-small: 12px !default;
+$--font-size-extra-small: 10px !default;
 /// fontWeight|1|Font Weight|1
 $--font-weight-primary: 500 !default;
 /// fontWeight|1|Font Weight|1
 $--font-weight-secondary: 100 !default;
 /// fontLineHeight|1|Line Height|2
-$--font-line-height-primary: 24px !default;
+$--font-line-height-primary: 20px !default;
 /// fontLineHeight|1|Line Height|2
 $--font-line-height-secondary: 16px !default;
-$--font-color-disabled-base: #bbb !default;
+$--font-color-disabled-base: #4D5774 !default;
 /* Size
 -------------------------- */
-$--size-base: 14px !default;
+$--size-base: 12px !default;
 
 /* z-index
 -------------------------- */
@@ -138,9 +139,9 @@ $--index-popper: 2000 !default;
 
 /* Disable base
 -------------------------- */
-$--disabled-fill-base: $--background-color-base !default;
-$--disabled-color-base: $--color-text-placeholder !default;
-$--disabled-border-base: $--border-color-light !default;
+$--disabled-fill-base: #1a2031 !default;
+$--disabled-color-base: #4d5774 !default;
+$--disabled-border-base: rgba(0,0,0,0) !default;
 
 /* Icon
 -------------------------- */
@@ -296,10 +297,10 @@ $--select-option-disabled-color: $--color-text-placeholder !default;
 $--select-option-disabled-background: $--color-white !default;
 /// height||Other|4
 $--select-option-height: 34px !default;
-$--select-option-hover-background: $--background-color-base !default;
+$--select-option-hover-background: $--background-hover-color-base !default;
 /// color||Color|0
 $--select-option-selected-font-color: $--color-primary !default;
-$--select-option-selected-hover: $--background-color-base !default;
+$--select-option-selected-hover: $--background-hover-color-base !default;
 
 $--select-group-color: $--color-info !default;
 $--select-group-height: 30px !default;
@@ -428,7 +429,7 @@ $--input-font-color: $--color-text-regular !default;
 /// height||Other|4
 $--input-width: 140px !default;
 /// height||Other|4
-$--input-height: 40px !default;
+$--input-height: 28px !default;
 $--input-border: $--border-base !default;
 $--input-border-color: $--border-color-base !default;
 /// borderRadius||Border|2
@@ -479,7 +480,7 @@ $--cascader-menu-font-size: $--font-size-base !default;
 $--cascader-menu-radius: $--border-radius-base !default;
 $--cascader-menu-border: solid 1px $--border-color-light !default;
 $--cascader-menu-shadow: $--box-shadow-light !default;
-$--cascader-node-background-hover: $--background-color-base !default;
+$--cascader-node-background-hover: $--background-hover-color-base !default;
 $--cascader-node-color-disabled:$--color-text-placeholder !default;
 $--cascader-color-empty:$--color-text-placeholder !default;
 $--cascader-tag-background: #f0f2f5;
@@ -515,33 +516,33 @@ $--button-font-weight: $--font-weight-primary !default;
 /// borderRadius||Border|2
 $--button-border-radius: $--border-radius-base !default;
 /// padding||Spacing|3
-$--button-padding-vertical: 12px !default;
+$--button-padding-vertical: 6px !default;
 /// padding||Spacing|3
-$--button-padding-horizontal: 20px !default;
+$--button-padding-horizontal: 8px !default;
 
 /// fontSize||Font|1
 $--button-medium-font-size: $--font-size-base !default;
 /// borderRadius||Border|2
 $--button-medium-border-radius: $--border-radius-base !default;
 /// padding||Spacing|3
-$--button-medium-padding-vertical: 10px !default;
+$--button-medium-padding-vertical: 6px !default;
 /// padding||Spacing|3
-$--button-medium-padding-horizontal: 20px !default;
+$--button-medium-padding-horizontal: 8px !default;
 
 /// fontSize||Font|1
 $--button-small-font-size: 12px !default;
 $--button-small-border-radius: #{$--border-radius-base - 1} !default;
 /// padding||Spacing|3
-$--button-small-padding-vertical: 9px !default;
+$--button-small-padding-vertical: 5px !default;
 /// padding||Spacing|3
-$--button-small-padding-horizontal: 15px !default;
+$--button-small-padding-horizontal: 7px !default;
 /// fontSize||Font|1
 $--button-mini-font-size: 12px !default;
 $--button-mini-border-radius: #{$--border-radius-base - 1} !default;
 /// padding||Spacing|3
-$--button-mini-padding-vertical: 7px !default;
+$--button-mini-padding-vertical: 4px !default;
 /// padding||Spacing|3
-$--button-mini-padding-horizontal: 15px !default;
+$--button-mini-padding-horizontal: 6px !default;
 
 /// color||Color|0
 $--button-default-font-color: $--color-text-regular !default;
@@ -560,25 +561,25 @@ $--button-disabled-border-color: $--border-color-lighter !default;
 /// color||Color|0
 $--button-primary-border-color: $--color-primary !default;
 /// color||Color|0
-$--button-primary-font-color: $--color-white !default;
+$--button-primary-font-color: $--color-text-regular !default;
 /// color||Color|0
 $--button-primary-background-color: $--color-primary !default;
 /// color||Color|0
 $--button-success-border-color: $--color-success !default;
 /// color||Color|0
-$--button-success-font-color: $--color-white !default;
+$--button-success-font-color: $--color-text-regular !default;
 /// color||Color|0
 $--button-success-background-color: $--color-success !default;
 /// color||Color|0
 $--button-warning-border-color: $--color-warning !default;
 /// color||Color|0
-$--button-warning-font-color: $--color-white !default;
+$--button-warning-font-color: $--color-text-regular !default;
 /// color||Color|0
 $--button-warning-background-color: $--color-warning !default;
 /// color||Color|0
 $--button-danger-border-color: $--color-danger !default;
 /// color||Color|0
-$--button-danger-font-color: $--color-white !default;
+$--button-danger-font-color: $--color-text-regular !default;
 /// color||Color|0
 $--button-danger-background-color: $--color-danger !default;
 /// color||Color|0
@@ -635,8 +636,8 @@ $--table-font-color: $--color-text-regular !default;
 /// color||Color|0
 $--table-header-font-color: $--color-text-secondary !default;
 /// color||Color|0
-$--table-row-hover-background-color: $--background-color-base !default;
-$--table-current-row-background-color: $--color-primary-light-9 !default;
+$--table-row-hover-background-color: $--background-hover-color-base !default;
+$--table-current-row-background-color: $--background-hover-color-base !default;
 /// color||Color|0
 $--table-header-background-color: $--color-white !default;
 $--table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, .12) !default;
@@ -644,18 +645,18 @@ $--table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, .12) !default;
 /* Pagination
 -------------------------- */
 /// fontSize||Font|1
-$--pagination-font-size: 13px !default;
+$--pagination-font-size: 12px !default;
 /// color||Color|0
 $--pagination-background-color: $--color-white !default;
 /// color||Color|0
 $--pagination-font-color: $--color-text-primary !default;
-$--pagination-border-radius: 3px !default;
+$--pagination-border-radius: 2px !default;
 /// color||Color|0
 $--pagination-button-color: $--color-text-primary !default;
 /// height||Other|4
-$--pagination-button-width: 35.5px !default;
+$--pagination-button-width: 30px !default;
 /// height||Other|4
-$--pagination-button-height: 28px !default;
+$--pagination-button-height: 24px !default;
 /// color||Color|0
 $--pagination-button-disabled-color: $--color-text-placeholder !default;
 /// color||Color|0
@@ -677,7 +678,7 @@ $--popover-background-color: $--color-white !default;
 /// fontSize||Font|1
 $--popover-font-size: $--font-size-base !default;
 /// color||Color|0
-$--popover-border-color: $--border-color-lighter !default;
+$--popover-border-color: rgba(0,0,0,0) !default;
 $--popover-arrow-size: 6px !default;
 /// padding||Spacing|3
 $--popover-padding: 12px !default;
@@ -721,7 +722,7 @@ $--tag-padding: 0 10px !default;
 /* Tree
 -------------------------- */
 /// color||Color|0
-$--tree-node-hover-background-color: $--background-color-base !default;
+$--tree-node-hover-background-color: $--background-hover-color-base !default;
 /// color||Color|0
 $--tree-font-color: $--color-text-regular !default;
 /// color||Color|0

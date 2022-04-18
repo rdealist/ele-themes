@@ -53,7 +53,7 @@
   @include m(info) {
     &.is-light {
       background-color: $--alert-info-color;
-      color: $--color-info;
+      color: $--color-white;
     }
 
     &.is-dark {
@@ -62,7 +62,7 @@
     }
 
     .el-alert__description {
-      color: $--color-info;
+      color: $--color-white;
     }
   }
 
